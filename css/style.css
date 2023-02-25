@@ -2,7 +2,7 @@
 /* step 1 */
 #logo {
     /* call animation */
-    animation: logoAnimate 5s ease-out;
+    animation: logoAnimate 5s;
 }
 
 @keyframes logoAnimate{
@@ -20,6 +20,7 @@ body{
 header{
     /* use flex */
     display: flex;
+    /* vertcial and horizontal center */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -33,6 +34,7 @@ header{
 }
 /* step 5 */
 a:visited, a:link{
+    /* does not change the color */
     color:blue;
 }
 /* step 6 */
@@ -44,6 +46,7 @@ a:visited, a:link{
     border-top-right-radius: 50px;
 }
 .pricing > div {
+    /* curve the leftover corner to match the green corner */
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -52,7 +55,7 @@ a:visited, a:link{
     display: flex;
     flex-direction: column;
     flex-basis: 450px;
-    /* justify-content: center; */
+    
 }
 /* step 8 */
 .pricing{
@@ -65,6 +68,7 @@ a:visited, a:link{
 }
 /* step 9 */
 .gallery img {
+    /* styles all image in the gallery class */
     border: 10px solid #50C7C7;
     margin: 10px;
     width: 300px;
@@ -96,16 +100,16 @@ a:visited, a:link{
     .pricing{
         display: flex;
         flex-direction: row;
-        /* justify-content: center; */
-        /* flex-basis: 250px; */
+        
     }
     .card {
         display: flex;
         flex-basis: 275px;
-        /* justify-content: space-around; */
+        
     }
     /* step 13 */
     body > header{
+        /* fixed header when scrolling */
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -153,7 +157,7 @@ a:visited, a:link{
     .gallery, #gallery{
         display: none;
     }
-    /* step 21 */
+    /* step 21 to add thumbs up emoji */
     .card li:nth-child(2)::after{
         content:"👍";
     }
